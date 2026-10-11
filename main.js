@@ -67,3 +67,59 @@ for (let i = 1; i <= limite; i++) {
     }
 }
  */
+/*******
+ARRAY 
+********/
+
+/* --------------------------Esercizio 1------------------------------- */
+
+/* const materie = ["matematica", "storia", "geografia", "inglese"];
+
+const voti = [5, 8, 7, 8];
+
+const presenze = [true, true, true, false, false, true];
+
+console.log(materie[materie.length - 1]);
+ */
+
+/* ---------------------Esercizio 2--------------------------- */
+
+/* const numeri = [7, 3, 25, 4, 6];
+
+console.log(numeri.length);
+
+for (let i = 0; i < numeri.length; i++) {
+
+    if (numeri[i] >= 5) {
+        console.log(numeri[i]);
+    }
+} */
+
+/* ------------------------Esercizio 3----------------------- */
+
+/* const colori = ['rosso', 'verde', 'blu', 'giallo'];
+
+colori.push("viola");
+colori.splice(0, 1);
+
+console.log(colori.includes("blue"));
+
+colori.slice(0, 2);
+
+const stringa = colori.join('|');
+
+console.log(stringa);
+ */
+
+
+
+/* ------------------------Esercizio 4----------------------- */
+
+const info = ['Mario Rossi', 42, 'Roma', 'sviluppatore', 'italiano'];
+const [nome, età, città, , ...ultime] = info;
+
+console.log(nome);
+console.log(età);
+console.log(città);
+
+console.log(ultime);
