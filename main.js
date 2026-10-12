@@ -115,7 +115,7 @@ console.log(stringa);
 
 /* ------------------------Esercizio 4----------------------- */
 
-const info = ['Mario Rossi', 42, 'Roma', 'sviluppatore', 'italiano'];
+/* const info = ['Mario Rossi', 42, 'Roma', 'sviluppatore', 'italiano'];
 const [nome, età, città, , ...ultime] = info;
 
 console.log(nome);
@@ -123,3 +123,87 @@ console.log(età);
 console.log(città);
 
 console.log(ultime);
+ */
+
+/* ------------------------Esercizio 5----------------------- */
+
+/* const array_uno = ['React', 'Vue'];
+const array_due = ['Node', 'Express'];
+
+const uniti = [...array_uno, ...array_due];
+const copia = [...array_uno];
+
+copia.push('Angular');
+
+console.log(array_uno);
+console.log(uniti);
+console.log(copia);
+ */
+
+/* ------------------------Esercizio Finale Array----------------------- */
+
+/* const linguaggi = ['javaScript', 'C++', 'typeScript', 'Python', 'PhP'];
+
+console.table(linguaggi);
+
+console.log(linguaggi.length);
+
+for (let i = 0; i < linguaggi.length; i++) {
+
+    if (linguaggi[i].length > 4) {
+        console.log(linguaggi[i]);
+    }
+}
+
+linguaggi.push('SQL');
+linguaggi.shift();
+
+console.log(linguaggi.includes('Python'));
+
+const stringa = linguaggi.join('-');
+console.log(stringa);
+
+const [primo, secondo, ...ultimi] = linguaggi;
+console.log(primo);
+console.log(secondo);
+console.log(ultimi);
+
+const copia = [...linguaggi];
+
+copia.push('CSharp');
+
+console.log(copia);
+ */
+
+/* ------------------------Extra While, do/While----------------------- */
+
+/* Capitolo 1 */
+
+/* let voto;
+let number=0;
+media=0;
+
+while(voto !== 0){
+    voto=Number(prompt("inserisci numero"));
+    number++;
+    media=media + voto;
+}
+
+if(voto === 0){
+    number--;
+    media=media / number;
+}
+
+console.log(`La tua media è di : ${media}`);
+ */
+
+/* Capitolo 2 */
+let pin;
+
+do{
+    pin=Number(prompt("inserisci il PIN"));
+} while (pin !== 1234);
+
+console.log("PIN Corretto. Benvenuto");
+
+
